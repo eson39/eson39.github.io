@@ -163,7 +163,73 @@ nav .right a span {
 }
 
 /* Section 3: Projects */
+.project-section h2 {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 25px;
+  font-size: 35px;
+}
 
+.project-section .cells {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.project-section .cell {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 16px;
+  background: transparent;
+  border: 1px solid #ececec;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.project-section .cell img {
+  width: 120px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.project-section .cell span {
+  font-weight: 600;
+  font-size: 1.1rem;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.project-section .project__tags {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.project-section .report-link a {
+  width: 100px;
+  height: 75px;
+  display: inline-block;
+  padding: 8px 12px;
+  background: #7c7b7b35;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #333;
+  transition: background 0.2s ease;
+}
+
+.project-section .report-link a:hover {
+  background: #c3c2c2;
+}
 
 /* Section 4: Extracurriculars */
 .extracurriculars-section .description {
@@ -179,10 +245,11 @@ nav .right a span {
 
 .extracurriculars-section {
   padding: 0 50px;
-  margin-bottom: 100px;
+  margin-bottom: 150px;
 }
 
 .extracurriculars-section h2 {
+  margin-top: 100px;
   text-align: center;
   margin-bottom: 5px;
   font-size: 35px;
@@ -209,12 +276,14 @@ nav .right a span {
   padding: 15px;
   border: 1.5px solid #d3d3d3;
   border-radius: 5px;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+  background-color: transparent;
 }
 
 .extracurriculars-section .cells a .cell:hover {
   transform: scale(1.05);
   cursor: pointer;
+  background-color: #cdcccc;
 }
 
 .extracurriculars-section .cells .cell .description {
