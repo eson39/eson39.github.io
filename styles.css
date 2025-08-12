@@ -1,0 +1,142 @@
+:root {
+    --text-color: #1a1c20;
+    --link-color: #4a76ee;
+    --background-color: #eeeff1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+}
+/* link color */
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 80px;
+}
+
+nav .left a {
+    color: var(--background-color);
+    font-size: 22px;
+    font-weight: 600;
+    background-color: var(--text-color);
+    border-radius: 15px;
+    padding: 5px 15px;
+
+}
+
+nav .right a {
+    color: var(--text-color);
+    margin: 0 10px;
+}
+
+nav .right a:last-child {
+    color: var(--background-color);
+    background-color: var(--text-color);
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+nav .right a span{
+    margin-left: 5px;
+}
+
+/* Section 1 */
+.intro-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    margin: 50px 0;
+    margin-bottom: 100px;
+    gap: 40px;
+}
+
+.intro-section .text {
+    font-size: 45px;
+}
+
+.intro-section .text .links {
+    margin-top: 25px;
+}
+
+.intro-section .text .links a {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid var(--link-color);
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: .1s;
+}
+
+.intro-section .text .links a:hover {
+    color:var(--text-color);
+    border-color: 2px solid var(--text-color);
+}
+
+.intro-section .text h2 {
+    flex: 5;
+}
+
+.intro-section .headshot {
+    flex: 2;
+    justify-content: right;
+}
+
+.intro-section .headshot img {
+    border-radius: 50%;
+    width: 350px;
+}
+
+@media (max-width: 850px) {
+    .intro-section .text h2 {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 740px) {
+    .intro-section {
+        flex-direction: column-reverse;
+    }
+}
+/* only applied to >= 600px for smaller screens */
+@media (max-width: 600px) {
+    nav {
+        padding: 0 20px;
+    }
+
+    nav .right a {
+        font-size: 22px; 
+    }
+
+    nav .right a:last-child {
+        color: var(--text-color);
+        background-color: transparent;
+        padding: 0;
+        
+    }
+
+    nav .right a span {
+        display: none;
+
+    }
+}
