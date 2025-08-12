@@ -264,6 +264,14 @@ nav .right a span {
   margin-bottom: 10px;
 }
 
+.extracurriculars-section .cells {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+
 .extracurriculars-section .cells a {
   margin: 5px;
   display: inline-block;
