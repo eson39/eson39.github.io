@@ -162,7 +162,10 @@ nav .right a span {
   border-radius: 2px;
 }
 
-/* Section 3: Extracurriculars */
+/* Section 3: Projects */
+
+
+/* Section 4: Extracurriculars */
 .extracurriculars-section .description {
   margin-top: 20px;
   font-size: 16px;
@@ -233,58 +236,6 @@ nav .right a span {
   font-weight: 600;
 }
 
-/* Section 4: Contact */
-.contact-section {
-  padding: 0 50px;
-  margin-bottom: 100px;
-}
-
-.contact-section h2 {
-  font-size: 35px;
-}
-
-.contact-section .group {
-  display: flex;
-  gap: 50px;
-}
-
-.contact-section .group .text {
-  flex: 3;
-  margin-top: 20px;
-}
-
-.contact-section .group form {
-  flex: 3;
-  display: flex;
-  flex-direction: column;
-}
-
-.contact-section .group form input,
-.contact-section .group form textarea {
-  font-family: "Poppins", sans-serif;
-  border: 2px solid black;
-  background-color: transparent;
-  padding: 10px;
-  margin-bottom: 15px;
-  resize: none;
-}
-
-.contact-section .group form button {
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  color: white;
-  background-color: #b0b3b8;
-  border: 1.5px solid black;
-  height: 50px;
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-.contact-section .group form button:hover {
-  filter: brightness(0.9);
-  transform: scale(1.01);
-}
-
 /* Footer */
 footer {
   background-color: var(--text-color);
@@ -326,10 +277,6 @@ footer .social-links a {
   .intro-section .headshot {
     flex-direction: 300px;
   }
-  /* Section 4: Contact */
-  .contact-section .group {
-    flex-direction: column;
-  }
 }
 
 /* only applied to >= 600px for smaller screens */
@@ -366,10 +313,5 @@ footer .social-links a {
 
   .skills-section .cells .cell span {
     font-size: 16px;
-  }
-  /* Section 4: Contact */
-  .contact-section .group {
-    flex-direction: column;
-    padding: 0 20px;
   }
 }
