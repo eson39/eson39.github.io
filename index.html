@@ -2,420 +2,319 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
-      rel="stylesheet"
-    />
-
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
-      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-
+    <title>Eric's Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
-
-    <title>Eric Son</title>
+    <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
-    <!-- NAVBAR -->
-    <nav>
-      <div class="left">
-        <a href="/">eson</a>
-      </div>
-      <div class="right">
-        <a
-          href="https://github.com/eson39"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i class="fa-brands fa-github-alt"></i>
-          <span>Github</span>
-        </a>
-
-        <a
-          href="https://www.linkedin.com/in/eson10"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i class="fa-brands fa-linkedin"></i>
-          <span>LinkedIn</span>
-        </a>
-
-        <a
-          href="mailto: es4451@columbia.edu"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i class="fa-solid fa-envelope"></i> <span>Email</span>
-        </a>
+    <nav id="desktop-nav">
+      <div class="logo">Eric Son</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </div>
     </nav>
-
-    <main>
-      <!-- Section 1: INTRO -->
-      <section class="intro-section">
-        <div class="text">
-          <h2>Hi, I'm Eric.</h2>
-          <p>
-            I am a computer science student at Columbia University that is
-            passionate about software engineering, NLP, and computer vision. My
-            expereince ranges from working with frameworks like React to
-            experience with iOS app development with SwiftUI. This portfolio
-            highlights my academic journey, key projects and accomplishments, as
-            well as technical skills. In the future, my goal is to leverage my
-            academic background, research, and diverse engineering experience to
-            design and deliver impactful, high-performance software systems. In
-            my freetime, I love to play chess, basketball, and listen to
-            classical music. Feel free to reach out!
-          </p>
-
-          <div class="links">
-            <a
-              href="https://drive.google.com/file/d/108qkCeuKbSuMV8x7LS_XW2jL-xUhe7b2/view?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <i class="fa-solid fa-book"></i> <span>Resume</span>
-            </a>
-
-            <a href="#skills">
-              <i class="fa-solid fa-code"></i>
-              <span>Skills</span>
-            </a>
-
-            <a href="#projects">
-              <i class="fa-solid fa-gear"></i> <span>Projects</span>
-            </a>
-
-            <a href="#extracurriculars">
-              <i class="fa-solid fa-comment-nodes"></i>
-              <span>Extracurriculars</span>
-            </a>
-          </div>
+    <nav id="hamburger-nav">
+      <div class="logo">Eric Son</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-
-        <div class="headshot">
-          <img src="images/2935307_5053124_25_33999482.webp" />
-        </div>
-      </section>
-
-      <!-- Section 2: Skills -->
-      <section id="skills" class="skills-section">
-        <h2>Skills</h2>
-        <div class="text">My Skills, Programming Languages, and Frameworks</div>
-
-        <div class="cells">
-          <div class="cell">
-            <img src="images/C_Logo.png" alt="java logo" />
-            <span>C</span>
-          </div>
-          <div class="cell">
-            <img src="images/Java.png" alt="java logo" />
-            <span>Java</span>
-          </div>
-          <div class="cell">
-            <img src="images/Python.png" alt="python logo" />
-            <span>Python</span>
-          </div>
-          <div class="cell">
-            <img src="images/JavaScript.png" alt="javascript logo" />
-            <span>JavaScript</span>
-          </div>
-          <div class="cell">
-            <img src="images/React.png" alt="react logo" />
-            <span>React</span>
-          </div>
-          <div class="cell">
-            <img src="images/Git.png" alt="git logo" />
-            <span>Git</span>
-          </div>
-          <div class="cell">
-            <img src="images/css.webp" alt="css logo" />
-            <span>CSS</span>
-          </div>
-          <div class="cell">
-            <img src="images/html-logo.webp" alt="html logo" />
-            <span>HTML</span>
-          </div>
-          <div class="cell">
-            <img src="images/download.png" alt="swift logo" />
-            <span>Swift</span>
-          </div>
-        </div>
-      </section>
-
-      <!-- Section 3: Projects Section-->
-      <section id="projects" class="project-section">
-        <h2>Recent Projects</h2>
-
-        <div class="cells">
-          <div class="cell">
-            <img src="images/unnamed.png" alt="hl logo" />
-            <span>HungryLion</span>
-            <ul class="project__tags">
-              <li>
-                A mobile application for Columbia students to access real-time
-                dining hall menus and nutritional information across Columbia's
-                11 dining halls
-              </li>
-              <li>
-                Technologies: PostgresSQL, Java (Spring Boot, JSoup), React
-                Native
-              </li>
-            </ul>
-            <div class="report-link">
-              <a
-                href="https://github.com/eson39/hungry-lion-backend"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span>Code</span>
-              </a>
-            </div>
-          </div>
-
-          <div class="cell">
-            <img
-              src="images/589f75b1-8287-4bda-9ddc-e72a4f5a0802.png"
-              alt="portfolio logo"
-            />
-            <span>Note Taker</span>
-            <ul class="project__tags">
-              <li>
-                A basic note taker app with a rate limiter and a custom theme.
-              </li>
-              <li>
-                Technologies: React, TailwindCSS, MongoDB, Express.js, HTML
-              </li>
-            </ul>
-            <div class="report-link">
-              <a
-                href="https://notetaker-wbc1.onrender.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span>Link</span>
-              </a>
-            </div>
-          </div>
-
-          <div class="cell">
-            <img
-              src="images/726107.png"
-              alt="portfolio logo"
-            />
-            <span>This Website</span>
-            <ul class="project__tags">
-              <li>My personal portfolio.</li>
-              <li>Technologies: HTML, CSS</li>
-            </ul>
-            <div class="report-link">
-              <a
-                href="https://eson39.github.io/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span>Link</span>
-              </a>
-            </div>
-          </div>
-
-          <div class="cell">
-            <img src="images/1630558111506.jpeg" alt="VIP logo" />
-            <span>GT VIP - Ideal Course Mapping</span>
-            <ul class="project__tags">
-              <li>
-                A way for advisors and students who want to understand ideal
-                pathways for degree completion, and departments who need to
-                understand and anticipate demands for coursework in a much more
-                flexible, responsive way than has been done
-              </li>
-              <li>Technologies: Next.js, Flask, TypeScript</li>
-            </ul>
-            <div class="report-link">
-              <a
-                href="https://drive.google.com/file/d/1pKszxKhEt-_btgefl9ATZEjfB6f3Rw-Z/view?usp=drive_link"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span>Report Link</span>
-              </a>
-            </div>
-          </div>
-
-          <div class="cell">
-            <img
-              src="images/lofiloop.png"
-              alt="lofi logo"
-            />
-            <span>LoFi Loop</span>
-            <ul class="project__tags">
-              <li>
-                Using AI-generated lofi music with a chat feature to customize
-                musical genre whether for studying, relaxing, sleeping, and
-                more.
-              </li>
-              <li>Technologies: Next.js, JavaScript, HTML, CSS</li>
-            </ul>
-            <div class="report-link">
-              <a
-                href="https://github.com/Superpatrex/LoFiLoop"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span>Code</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Section 4: Extracurriculars -->
-      <section id="extracurriculars" class="extracurriculars-section">
-        <h2>Extracurriculars</h2>
-        <div class="text">
-          All the various clubs and societies I've participated in (Click Each
-          Tab For Website Link)
-        </div>
-
-        <div class="cells">
-          <a
-            href="https://www.adicu.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div class="cell">
-              <img src="images/ADI-large-1.png" alt="ADI Logo" />
-              <span>Columbia ADI</span>
-              <div class="description">
-                The Application Development Initiative (ADI) is Columbia
-                University’s largest tech club, which builds a community of
-                student technologists by organizing workshops, mentorship
-                programs, events, and sharing educational and career resources.
-              </div>
-            </div>
-          </a>
-          <a
-            href="https://business.columbia.edu/lang/student-and-alumni-programming/launch/columbia-build-lab"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div class="cell">
-              <img src="images/download (1).jpeg" alt="Build Lab Logo" />
-              <span>Columbia Build Lab</span>
-              <div class="description">
-                Columbia Build Lab is an incubator that connects Columbia
-                Business School student-founders with Columbia engineering
-                talent seeking hands-on experience in building a minimum viable
-                product (MVP) with an early-stage startup. The program aims to
-                empower Columbia Business School students to scale projects into
-                viable businesses.
-              </div>
-            </div>
-          </a>
-          <a
-            href="https://vip.gatech.edu/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div class="cell">
-              <img src="images/1630558111506.jpeg" alt="VIP logo" />
-              <span>GT VIP Program</span>
-              <div class="description">
-                The Vertically Integrated Projects Program engages undergraduate
-                and graduate students in long-term, multidisciplinary projects
-                led by faculty, offering hands-on innovation experience while
-                supporting faculty and graduate research efforts.
-              </div>
-            </div>
-          </a>
-
-          <a
-            href="https://gt-webdev-website.vercel.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div class="cell">
-              <img src="images/web_dev_gt.jpg" alt="WebDev @ GT logo" />
-              <span>WebDev @ GT</span>
-              <div class="description">
-                Web Dev @ GT is a student organization that helps members build
-                and refine web development skills through hands-on workshops,
-                collaborative projects, and networking opportunities.
-              </div>
-            </div>
-          </a>
-
-          <a
-            href="https://siliconjackets.gt/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div class="cell">
-              <img src="images/SJ_Logo.png" alt="Silicon Jackets logo" />
-              <span>Silicon Jackets</span>
-              <div class="description">
-                Silicon Jackets is a student-run organization at Georgia Tech
-                that bridges classroom learning and semiconductor careers by
-                mirroring industry workflows through specialized teams in
-                digital design, verification, physical design, and business.
-              </div>
-            </div>
-          </a>
-
-          <a
-            href="https://gtios.club/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div class="cell">
-              <img src="images/app-ios-png-4.png" alt="iOS logo" />
-              <span>GT iOS Club</span>
-              <div class="description">
-                iOS club provides a comprehensive curriculum in iOS development
-                and design, enabling students to build their own apps in
-                semesterlong project groups.
-              </div>
-            </div>
-          </a>
-        </div>
-      </section>
-    </main>
-
-    <footer>
-      <div class="footer-content">
-        <p>© Eric Son</p>
-        <div class="social-links">
-          <a
-            href="https://github.com/eson39"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i class="fa-brands fa-github-alt"></i>
-          </a>
-          <a
-            href="https://www.linkedin.com/in/eson10"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i class="fa-brands fa-linkedin"></i>
-          </a>
-          <a
-            href="mailto:es4451@columbia.edu"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i class="fa-solid fa-envelope"></i>
-          </a>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img id="profile-pic" src="./assets/profile-pic.png" alt="Eric profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Eric Son</h1>
+        <p class="section__text__p2">Software Engineer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('https://drive.google.com/file/d/1nK0TQ2gY06xvAbNBo4_DyqCgNKwVUZwZ/view?usp=sharing')"
+          >
+            Resume
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="window.open('https://www.linkedin.com/in/eson10/')"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="window.open('https://github.com/eson39')"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.S. Bachelors Degree<br />Columbia University '28</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I am a sophomore B.S student at Columbia University specializing 
+              in information infonetworks and intelligence. 
+              With a passion for Software Engineering and High-Performance Systems, 
+              I thrive at the intersection of complex backend architecture 
+              and immersive user experiences. 
+              I have previously engineered solutions at Cirqle, and the Georgia Tech VIP Program.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Cirqle</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Aug 2025 - Dec 2025</h3>
+                  <p>Built a React Native skeleton with Supabase authentication, photo import, tagging, and wardrobe management for
+                    200+ items</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">GT VIP</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Jan 2025 - May 2025</h3>
+                  <p>Assisted in using student's degree requirements to show a graph of different courses they should take and the order in which they should take them.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">GT WebDev</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Jan 2025 - May 2025</h3>
+                  <p>Worked with a team to make LofiLoop, an app Using AI-generated lofi music with a chat feature to customize musical genre whether for studying, relaxing, sleeping, and more.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Tech Stack</h2>
+            <div class="tech-stack">
+              <span class="tech-pill">Java</span>
+              <span class="tech-pill">C/C++</span>
+              <span class="tech-pill">Python</span>
+              <span class="tech-pill">Javascript</span>
+              <span class="tech-pill">HTML/CSS</span>
+              <span class="tech-pill">React</span>
+              <span class="tech-pill">SQL</span>
+              <span class="tech-pill">Bash</span>
+            </div>
+            <!-- <h2 class="experience-sub-title">Tech Stack</h2>
+            <div class="article-container">
+              <article>
+                <div>
+                  <p>Assisted in using student's degree requirements to show a graph of different courses they should take and the order in which they should take them.
+                  </p>
+                </div>
+              </article>
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Pop Choice</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Website
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">HTTP Web Server</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://gist.github.com/eson39/6ce3439515a1aa4f73a3ce35d1db8c28'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">2D Segmentation</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.kaggle.com/code/eson10/bme-2d-department-project-eric-isabella'"
+              >
+                Kaggle
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://drive.google.com/file/d/1WqJY30OmAWm-vnOTA450vSFTNfo23ZiT/view?usp=sharing'"
+              >
+                Report
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:es4451@columbia.edu">es4451@columbia.edu</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a target="_blank" href="https://www.linkedin.com/in/eson10">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2026 Eric Son. All Rights Reserved.</p>
     </footer>
+    <script src="script.js"></script>
   </body>
 </html>
